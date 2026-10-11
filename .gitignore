@@ -42,3 +42,6 @@ yarn-error.log*
 *.swo
 .DS_Store
 Thumbs.db
+
+# Workspace Skills (installed locally)
+.agents/skills/
