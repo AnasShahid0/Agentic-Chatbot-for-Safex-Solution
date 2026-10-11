@@ -83,3 +83,16 @@ All 18 core competencies and 225 sub-skills are installed and active:
 ## 5. Active Daemon & Execution State
 - **Backend Daemon**: FastAPI (`http://127.0.0.1:8000`) running under Python 3.12.
 - **Working Tree**: Clean (`main` branch synced with `origin/main`).
+
+---
+
+## 6. Strict Policy: 100% Individual Atomic Commits (Always)
+
+- **Absolute Prohibition on Monolithic / Batch Commits**: `git add .` or grouping multiple edited files into a single commit is strictly disallowed.
+- **Single-File Commit Protocol**: Every single file created or modified MUST be committed individually in isolation:
+  ```bash
+  git add <exact-file-path>
+  git commit -m "<type>(<scope>): <explicit explanation of change>"
+  git push origin main
+  ```
+- **Traceability**: Each commit log entry must directly describe the change made to that specific file and the technical rationale behind it.
